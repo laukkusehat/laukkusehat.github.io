@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CodePen - Price Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700'><link rel="stylesheet" href="../assets/css/style-price.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="c-background">
+  <div class="c-pricing">
+    <div class="pricing-plans l-panel">
+      <div class="price-plan price-plan--personal">
+        <figure class="price-plan__image plan-image">
+          <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="Personal" class="plan-image__img">
+        </figure>
+        <div class="price-plan__details">
+          <h2 class="plan-title">Harga Aplikasi</h2>
+          <ul class="plan-features">
+            <li class="plan-features__feature">Order Dengan WA</li>
+            <li class="plan-features__feature">Data Menggunakan Google Sheet</li>
+          </ul>
+        </div>
+        <div class="price-plan__cost">Harga Mulai Dari Rp. 100K / bulan</div>
+        <div class="price-plan__register price-plan--free">
+          <button class="price-plan__register-button price-plan__register-button--selected" onclick="home()">Home</button>
+          <button class="price-plan__register-button" onclick="register()">Chat with Us</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+<script>
+function home(){
+  location.href = "https://maumakan0623.github.io/";
+}
+
+function register(){
+  var textWA = "https://wa.me/6285710507700?text="
+    textWA += "Halo saya mau buat aplikasi seperti mau makan !"
+
+    location.href = textWA
+
+}
+
+</script>
+</html>

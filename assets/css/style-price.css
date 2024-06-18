@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.c-background {
+    padding: 0 25px 25px;
+    width: auto;
+}
+
+@media (min-width: 900px) {
+    .c-background {
+        padding: 0 0 25px;
+    }
+}
+.c-background::after {
+    content: "";
+    height: 350px;
+    width: 100%;
+    background-color: #60a9ff;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 0;
+}
+
+.c-pricing {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    padding-top: 50px;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
+    .pricing-plans {
+        flex-direction: row;
+    }
+}
+
+.price-plan {
+    padding: 25px 50px;
+    border-bottom: 1px solid #e1f1ff;
+    border-bottom: 1px solid #e1f1ff;
+    flex-basis: 100%;
+}
+
+.price-plan:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 900px) {
+    .price-plan {
+        border-right: 1px solid #e1f1ff;
+        border-bottom: none;
+    }
+}
+
+.price-plan:last-child {
+    border-right: none;
+}
+
+.price-plan__details {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-plan__cost {
+    font-size: 32px;
+    font-weight: 700;
+    color: #016FF9;
+    text-align: center;
+}
+
+.price-plan__register {
+    margin: 25px 0;
+    text-align: center;
+}
+.price-plan__register-button {
+    border-radius: 10px;
+    padding: 9px;
+    text-transform: uppercase;
+    color: #348EFE;
+    cursor: pointer;
+    font: inherit;
+    background-color: #fff;
+    border: 1px solid #9dd1ff;
+    transition: background-color 150ms ease-in-out;
+}
+
+.price-plan__register-button:hover,
+.price-plan__register-button:focus {
+    background-color: #e1f1ff;
+}
+.price-plan__register-button:visited {
+  background-color: #fff;
+}
+.price-plan__register-button--selected {
+    background-color: #48aaff;
+    color: #fff;
+}
+.price-plan__register-button--selected:hover {
+    background-color: #269aff;
+}
+
+.plan-title {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.plan-features {
+    margin: 50px 0 25px;
+    color: #016FF9;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.plan-features__feature {
+    padding: 15px 0;
+    line-height: 1.5;
+    border-top: 1px solid #e1f1ff;
+}
+
+.plan-features__feature:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.plan-image {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.l-panel {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-color: #fff;
+
+}

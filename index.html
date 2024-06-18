@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Cart -->
+  <link rel="stylesheet" href="assets/cart/css/style.css">
+
+  <!-- Mine -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-card.css">
+  <title>Mau Makan</title>
+   <!-- add icon link -->
+   <link rel = "icon" href = 
+   "assets/img/logo-title.png" 
+           type = "image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://maumakan.my.id">
+      <img src="assets/img/logo.jpg" alt="Mau Makan" width="65" height="45" class="pl-1" style="background-color: #FFF5E4;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://maumakan.my.id/html/about.html">App</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="load-list lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  
+  <div>
+    <ul class="cards" id="list-menu">
+    </ul>
+  </div>
+
+  <div class="cd-cart cd-cart--empty js-cd-cart">
+    <a href="#0" class="cd-cart__trigger text-replace">
+      Cart
+      <ul class="cd-cart__count">
+        <!-- cart items count -->
+        <li>0</li>
+        <li>0</li>
+      </ul> <!-- .cd-cart__count -->
+    </a>
+
+    <div class="cd-cart__content">
+      <div class="cd-cart__layout">
+        <header class="cd-cart__header">
+          <h2>Cart</h2>
+          <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+        </header>
+        <div id="accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn dropdown-toggle btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Alamat Pengiriman 
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body alamat">
+                <div class="cd-cart__body-title">
+                  <form name="fCustomer">
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label required-field">Penerima</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama" placeholder="Nama" id="nama-p">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label required-field">No hp</label>
+                      <div class="col-sm-10">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">62</div>
+                          </div>
+                          <input type="text" class="form-control" name="noHp" placeholder="No HP" id="no-hp">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label required-field">Alamat</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" id="alamat" name="alamat" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div>
+                        <label for="autocomplete">Search:</label>
+                        <input type="text" id="autocomplete" autocomplete="off">
+                        <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+                    </div>
+              
+                  <script src="autocomplete-wilayah.js"></script>
+                    <!-- <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label required-field">Pengiriman</label>
+                      <div class="col-sm-10">
+                        <select id="pengiriman" class="form-control" name="pengiriman">
+                          <option selected>Pilih</option>
+                          <option value="Sabtu">Sabtu</option>
+                          <option value="Minggu">Minggu</option>
+                        </select>
+                      </div>
+                    </div> -->
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Catatan</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Catatan" id="catatan">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="cd-cart__body">
+              <ul>
+                <!-- products added to the cart will be inserted here using JavaScript -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="cd-cart__footer">
+          <a onClick="save()" href="#0" class="cd-cart__checkout">
+            <em>Checkout - Rp.<span>0</span>
+              <svg class="icon icon--sm" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor">
+                  <line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21"
+                    y2="12" />
+                  <polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    points="15,6 21,12 15,18 " />
+                </g>
+              </svg>
+            </em>
+          </a>
+        </footer>
+      </div>
+    </div> <!-- .cd-cart__content -->
+  </div> <!-- cd-cart -->
+  <footer>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://maumakan.my.id/html/about">Bubuy</a>. All Rights Reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Cart js -->
+  <script src="assets/cart/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <!-- End js Cart -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="assets/js/initial-var.js"></script>
+  <script src="assets/js/crud-script.js"></script>
+  <script src="assets/js/list-menu.js"></script>
+  <script src="assets/cart/js/main2.js"></script>
+
+</body>
+
+</html>
