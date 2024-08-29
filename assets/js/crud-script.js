@@ -63,7 +63,7 @@ function validateForm() {
   let nama = document.forms["fCustomer"]["nama"].value;
   let noHp = document.forms["fCustomer"]["noHp"].value;
   let alamat = document.forms["fCustomer"]["alamat"].value;
-  let pengiriman = document.forms["fCustomer"]["pengiriman"].value;
+  // let pengiriman = document.forms["fCustomer"]["pengiriman"].value;
 
   if (nama == "" || noHp == "" || alamat == "" || pengiriman == "Pilih" ) {
     document.getElementById("collapseOne").classList.add('show');
