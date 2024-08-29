@@ -20,11 +20,11 @@ function checkout(){
   noHp = $( "#no-hp" ).val();
   catatan = $( "#catatan" ).val();
 
-  //save session storage
-  localStorage.setItem('user', user);
-  localStorage.setItem('alamat', alamat);
-  localStorage.setItem('noHp', noHp);
-  localStorage.setItem('catatan', catatan);
+  // //save session storage
+  // localStorage.setItem('user', user);
+  // localStorage.setItem('alamat', alamat);
+  // localStorage.setItem('noHp', noHp);
+  // localStorage.setItem('catatan', catatan);
 
 
       $('.cd-cart__product').each(function(){
