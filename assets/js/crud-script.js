@@ -221,7 +221,7 @@ $.getJSON(url, function (json) {
     textWA += "%0APesanan : "+pesanan
     textWA += "%0A=============="
     textWA += "%0ATotal : Rp. "+totHarga.toLocaleString('id-ID')
-    textWA += "%0A*Belum Termasuk Ongkos Kirim"
+    textWA += "%0A*Belum termasuk ongkir dan biaya packing"
 
 
     location.href = textWA
