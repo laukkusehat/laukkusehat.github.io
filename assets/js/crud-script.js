@@ -15,7 +15,8 @@ function checkout(){
 
   user = $( "#nama-p" ).val();
   alamat = document.getElementById("alamat").value;
-  pengiriman = document.getElementById("pengiriman").value;
+  // pengiriman = document.getElementById("pengiriman").value;
+  pengiriman = "Kosong";
   noHp = $( "#no-hp" ).val();
   catatan = $( "#catatan" ).val();
 
@@ -65,7 +66,8 @@ function validateForm() {
   let alamat = document.forms["fCustomer"]["alamat"].value;
   // let pengiriman = document.forms["fCustomer"]["pengiriman"].value;
 
-  if (nama == "" || noHp == "" || alamat == "" || pengiriman == "Pilih" ) {
+  // if (nama == "" || noHp == "" || alamat == "" || pengiriman == "Pilih" ) {
+  if (nama == "" || noHp == "" || alamat == "" ) {
     document.getElementById("collapseOne").classList.add('show');
     alert("Mohon Lengkapi Data Pengiriman");
     return false;
