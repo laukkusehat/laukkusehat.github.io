@@ -16,7 +16,6 @@ function checkout(){
   user = $( "#nama-p" ).val();
   alamat = document.getElementById("alamat").value;
   pengiriman = document.getElementById("pengiriman").value;
-  pengiriman = "Kosong";
   noHp = $( "#no-hp" ).val();
   catatan = $( "#catatan" ).val();
 
