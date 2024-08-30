@@ -1,5 +1,5 @@
 
-var pesanan, user, alamat, noHp, pengiriman, catatan, totHarga=0, , ;
+var pesanan, user, alamat, noHp, pengiriman, catatan, totHarga=0;
 function save() {
     validateForm()
 
