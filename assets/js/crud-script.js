@@ -14,7 +14,7 @@ function checkout(){
   var kodeOrder=[]
 
   user = $( "#nama-p" ).val();
-  alamat = document.getElementById("alamat").value +" ,"+document.getElementById("kelurahan").value+" ,"+document.getElementById("kecamatan").value+" ,"+document.getElementById("kodePos").value;
+  alamat = document.getElementById("alamat").value +" ,"+document.getElementById("kelurahan").value+" ,"+document.getElementById("kecamatan").value+" ,"+document.getElementById("kode-pos").value;
   pengiriman = document.getElementById("pengiriman").value;
   noHp = $( "#no-hp" ).val();
   catatan = $( "#catatan" ).val();
